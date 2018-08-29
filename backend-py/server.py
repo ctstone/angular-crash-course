@@ -1,19 +1,20 @@
-from flask import (Flask, jsonify)
+from flask import (Flask, jsonify, request)
 from flask_cors import (CORS)
 
 app = Flask(__name__)
 cors = CORS(app, origins = '*')
-counter = 0
+users = []
 
-@app.route('/')
-def home():
-  return jsonify(message = 'hello world!')
+@app.route('/users', methods=['GET'])
+def get_users():
+  global users
+  return jsonify(value = users)
 
-@app.route('/count')
-def count():
-  global counter
-  counter += 1
-  return jsonify(value = counter)
+@app.route('/users', methods=['POST'])
+def add_user():
+  global users
+  users.append(request.get_json()['name'])
+  return '', 201
 
 if __name__ == '__main__':
   app.run()

@@ -1,0 +1,6 @@
+<h2>Users</h2>
+<button type="button" (click)="addUser()">add a user</button>
+<ul>
+  <li *ngFor="let user of users">{{user}}</li>
+</ul>
+<p *ngIf="!users?.length">no users</p>
