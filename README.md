@@ -1,6 +1,6 @@
 # Angular Crash Course
 
-> For a detailed walkthrough, view the [presentation](./docs/deck.pdf).
+> For a detailed walkthrough, view the [presentation](./docs/guide.pdf).
 
 ## Requirements
 
