@@ -1,6 +1,8 @@
 # Angular Crash Course
 
-> For a detailed walkthrough, view the [presentation](./docs/guide.pdf).
+This repo contains sample code demonstrating the minimum implementation of a Angular web app with connectivity to a Python/Node backend.
+
+For a detailed walkthrough, view the [presentation](./docs/guide.pdf).
 
 ## Requirements
 
